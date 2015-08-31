@@ -15,7 +15,7 @@ mytheme = function(base_size = 10, base_family = "sans") {
         axis.line.x = element_blank(), 
         axis.ticks = element_line(colour = "#666666"), 
         axis.ticks.y = element_blank(), 
-        axis.title = element_text(face = "plain"), 
+        axis.title = element_text(face = "italic"), 
         axis.title.y = element_text(vjust = 1, hjust = 0.1), 
         axis.title.x = element_text(hjust = 1, vjust = 0.1), 
         axis.text.x = element_text(vjust = 0), 
