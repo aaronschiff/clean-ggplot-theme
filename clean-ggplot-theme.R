@@ -35,6 +35,3 @@ mytheme = function(base_size = 12, base_family = "sans") {
   )
 }
 
-# Testing
-bc = ggplot(pd, aes(x = value, y = count)) + geom_bar(stat = "identity") + ggtitle(y$results[[8]]$variable_name) + mytheme()
-print(bc)
