@@ -7,7 +7,7 @@ clean_theme <- function(base_size = 12, base_family = "Helvetica", ...) {
     theme(
       # Plot
       plot.title = element_text(face = "bold", size = rel(1.1), hjust = 0), 
-      plot.margin = unit(c(5, 5, 5, 5), "mm"), 
+      plot.margin = unit(c(10, 10, 10, 10), "mm"), 
       plot.background = element_rect(fill = "white", colour = "white"), 
       
       # Axes
@@ -38,10 +38,8 @@ clean_theme <- function(base_size = 12, base_family = "Helvetica", ...) {
       # Legend
       legend.key = element_blank(), 
       legend.text = element_text(size = rel(1)), 
-      legend.title = element_text(face = "bold", size = rel(1)), 
-      
-      # Pass-through
-      ...
-    )
+      legend.title = element_text(face = "bold", size = rel(1))
+    ) + 
+    theme(...)
 }
 
